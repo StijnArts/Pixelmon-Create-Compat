@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pixelmon:silver_ingot"
+    }
+  ],
+  "result": {
+    "item": "pixelmon_create_compat:pixelmon_compat_silver_nugget",
+    "count": 9
+  }
+}

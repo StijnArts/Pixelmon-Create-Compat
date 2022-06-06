@@ -1,0 +1,19 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "create:crushed_aluminum_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "pixelmon_create_compat:pixelmon_compat_aluminium_nugget",
+      "count": 10
+    },
+    {
+      "item": "pixelmon_create_compat:pixelmon_compat_aluminium_nugget",
+      "count": 5,
+      "chance": 0.5
+    }
+  ]
+}

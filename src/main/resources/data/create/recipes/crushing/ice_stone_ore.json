@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "pixelmon:ice_stone_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "pixelmon:ice_stone_shard",
+      "count": 2
+    },
+    {
+      "item": "pixelmon:ice_stone_shard",
+      "chance": 0.25
+    },
+    {
+      "item": "minecraft:packed_ice",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 500
+}

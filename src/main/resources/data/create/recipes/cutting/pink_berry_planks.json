@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "pixelmon:pink_berry_logs"
+    }
+  ],
+  "results": [
+    {
+      "item": "pixelmon:pink_berry_wood_planks",
+      "count": 5
+    }
+  ],
+  "processingTime": 50
+}

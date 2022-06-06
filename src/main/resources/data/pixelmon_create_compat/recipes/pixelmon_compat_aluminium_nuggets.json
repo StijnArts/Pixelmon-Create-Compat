@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pixelmon:aluminium_ingot"
+    }
+  ],
+  "result": {
+    "item": "pixelmon_create_compat:pixelmon_compat_aluminium_nugget",
+    "count": 9
+  }
+}

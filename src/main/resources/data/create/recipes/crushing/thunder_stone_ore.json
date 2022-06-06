@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "pixelmon:thunder_stone_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "pixelmon:thunder_stone_shard",
+      "count": 2
+    },
+    {
+      "item": "pixelmon:thunder_stone_shard",
+      "chance": 0.25
+    },
+    {
+      "item": "minecraft:cobblestone",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 500
+}

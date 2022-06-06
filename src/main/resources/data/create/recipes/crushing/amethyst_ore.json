@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "pixelmon:amethyst_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "pixelmon:amethyst",
+      "count": 2
+    },
+    {
+      "item": "pixelmon:amethyst",
+      "chance": 0.25
+    },
+    {
+      "item": "minecraft:cobblestone",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 500
+}

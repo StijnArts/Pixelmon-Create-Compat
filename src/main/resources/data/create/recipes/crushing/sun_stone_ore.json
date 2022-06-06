@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "pixelmon:sun_stone_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "pixelmon:sun_stone_shard",
+      "count": 2
+    },
+    {
+      "item": "pixelmon:sun_stone_shard",
+      "chance": 0.25
+    },
+    {
+      "item": "minecraft:sandstone",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 500
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pixelmon:aluminium_ingot",
+    "pixelmon:crystal",
+    "pixelmon:silver_ingot",
+    "pixelmon:platinum_ingot"
+  ]
+}

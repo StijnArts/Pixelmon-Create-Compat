@@ -1,0 +1,16 @@
+{
+  "replace": true,
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:diorite"
+    }
+  ],
+  "results": [
+    {
+      "item": "pixelmon_create_compat:pixelmon_compat_platinum_nugget",
+      "chance": 0.08
+    }
+  ],
+  "processingTime": 250
+}

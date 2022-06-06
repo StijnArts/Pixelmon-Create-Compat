@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "pixelmon_create_compat:pixelmon_compat_aluminium_nugget",
+    "pixelmon_create_compat:pixelmon_compat_silver_nugget",
+    "pixelmon_create_compat:pixelmon_compat_platinum_nugget"
+  ]
+}
