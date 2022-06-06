@@ -15,7 +15,7 @@ authors="Drai, Kadinu"
     modId="pixelmon"
     mandatory=true
     versionRange="[9.0.1,)"
-    ordering="AFTER"
+    ordering="BEFORE"
     side="BOTH"
 
 [[dependencies.pixelmon_create_compat]]
