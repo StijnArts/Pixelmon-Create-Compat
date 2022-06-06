@@ -1,5 +1,5 @@
 
-package net.mcreator.pixelmoncreatecompat.item;
+package net.Drai.pixelmoncreatecompat.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -9,15 +9,15 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.pixelmoncreatecompat.PixelmonCreateCompatModElements;
+import net.Drai.pixelmoncreatecompat.PixelmonCreateCompatModElements;
 
 @PixelmonCreateCompatModElements.ModElement.Tag
-public class PixelmonCompatAluminiumNuggetItem extends PixelmonCreateCompatModElements.ModElement {
-	@ObjectHolder("pixelmon_create_compat:pixelmon_compat_aluminium_nugget")
+public class PixelmonCompatSilverNuggetItem extends PixelmonCreateCompatModElements.ModElement {
+	@ObjectHolder("pixelmon_create_compat:pixelmon_compat_silver_nugget")
 	public static final Item block = null;
 
-	public PixelmonCompatAluminiumNuggetItem(PixelmonCreateCompatModElements instance) {
-		super(instance, 5);
+	public PixelmonCompatSilverNuggetItem(PixelmonCreateCompatModElements instance) {
+		super(instance, 4);
 	}
 
 	@Override
@@ -28,9 +28,8 @@ public class PixelmonCompatAluminiumNuggetItem extends PixelmonCreateCompatModEl
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().tab(ItemGroup.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
-			setRegistryName("pixelmon_compat_aluminium_nugget");
+			setRegistryName("pixelmon_compat_silver_nugget");
 		}
-
 
 		public int getItemEnchantability() {
 			return 0;

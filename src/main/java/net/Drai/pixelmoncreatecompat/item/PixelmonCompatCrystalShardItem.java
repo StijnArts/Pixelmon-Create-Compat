@@ -1,5 +1,5 @@
 
-package net.mcreator.pixelmoncreatecompat.item;
+package net.Drai.pixelmoncreatecompat.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -9,15 +9,15 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.pixelmoncreatecompat.PixelmonCreateCompatModElements;
+import net.Drai.pixelmoncreatecompat.PixelmonCreateCompatModElements;
 
 @PixelmonCreateCompatModElements.ModElement.Tag
-public class PixelmonCompatPlatinumNuggetItem extends PixelmonCreateCompatModElements.ModElement {
-	@ObjectHolder("pixelmon_create_compat:pixelmon_compat_platinum_nugget")
+public class PixelmonCompatCrystalShardItem extends PixelmonCreateCompatModElements.ModElement {
+	@ObjectHolder("pixelmon_create_compat:pixelmon_compat_crystal_shard")
 	public static final Item block = null;
 
-	public PixelmonCompatPlatinumNuggetItem(PixelmonCreateCompatModElements instance) {
-		super(instance, 1);
+	public PixelmonCompatCrystalShardItem(PixelmonCreateCompatModElements instance) {
+		super(instance, 6);
 	}
 
 	@Override
@@ -28,8 +28,9 @@ public class PixelmonCompatPlatinumNuggetItem extends PixelmonCreateCompatModEle
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().tab(ItemGroup.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
-			setRegistryName("pixelmon_compat_platinum_nugget");
+			setRegistryName("pixelmon_compat_crystal_shard");
 		}
+
 
 		public int getItemEnchantability() {
 			return 0;

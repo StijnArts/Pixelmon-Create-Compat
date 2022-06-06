@@ -15,7 +15,7 @@
  *    will be REGENERATED on each build.
  *
  */
-package net.mcreator.pixelmoncreatecompat;
+package net.Drai.pixelmoncreatecompat;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
