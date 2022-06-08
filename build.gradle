@@ -1,16 +1,19 @@
 buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net' }
+        maven { url='https://repo.spongepowered.org/repository/maven-public/' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+apply plugin: 'org.spongepowered.mixin'
 
 version = '1.0'
 group = 'com.yourname.modid'
@@ -70,8 +73,28 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
+
+    implementation fg.deobf("curse.maven:flywheel-486392:3535459")
+
+    implementation fg.deobf("curse.maven:create-328085:3536025")
+
+    implementation fg.deobf('pixelmon:Pixelmon-1.16.5-9.0.1-universal:9.0.1')
+
+    implementation fg.deobf("curse.maven:jei-238222:3681294")
 }
 
+ repositories       {
+     maven {
+         url 'https://www.cursemaven.com'
+         // FG4: It's recommended to uncomment the following block
+         content {
+                    includeGroup "curse.maven"
+                }
+            }
+     flatDir {
+         dirs 'lib'
+     }
+ }
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
     manifest {
@@ -103,5 +126,8 @@ publishing {
         maven {
             url "file:///${project.projectDir}/mcmodsrepo"
         }
+
+
+
     }
 }

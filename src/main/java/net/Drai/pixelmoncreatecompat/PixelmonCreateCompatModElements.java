@@ -40,19 +40,6 @@ public class PixelmonCreateCompatModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 
 	public PixelmonCreateCompatModElements() {
-		try {
-			ModFileScanData modFileInfo = ModList.get().getModFileById("pixelmon_create_compat").getFile().getScanResult();
-			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
-			for (ModFileScanData.AnnotationData annotationData : annotations) {
-				if (annotationData.getAnnotationType().getClassName().equals(ModElement.Tag.class.getName())) {
-					Class<?> clazz = Class.forName(annotationData.getClassType().getClassName());
-					if (clazz.getSuperclass() == PixelmonCreateCompatModElements.ModElement.class)
-						elements.add((PixelmonCreateCompatModElements.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 		Collections.sort(elements);
 		elements.forEach(PixelmonCreateCompatModElements.ModElement::initElements);
 	}
@@ -99,6 +86,7 @@ public class PixelmonCreateCompatModElements {
 		protected final int sortid;
 
 		public ModElement(PixelmonCreateCompatModElements elements, int sortid) {
+
 			this.elements = elements;
 			this.sortid = sortid;
 		}
