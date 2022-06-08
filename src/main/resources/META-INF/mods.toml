@@ -13,7 +13,7 @@ authors="Drai, Kadinu"
 
 [[dependencies.pixelmon_create_compat]]
     modId="pixelmon"
-    mandatory=true
+    mandatory=false
     versionRange="[9.0.1,)"
     ordering="NONE"
     side="BOTH"
