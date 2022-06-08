@@ -1,0 +1,23 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "pixelmon:cornn_berry"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:purple_dye",
+      "count": 2
+    },
+    {
+      "item": "minecraft:green_dye",
+      "chance": 0.1
+    },
+    {
+      "item": "minecraft:yellow_dye",
+      "chance": 0.1
+    }
+  ],
+  "processingTime": 50
+}

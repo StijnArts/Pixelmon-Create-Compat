@@ -11,7 +11,7 @@
       "chance": 0.25
     },
 	{
-      "item": "pixelmon_create_compat:pixelmon_compat_aluminium_nugget",
+      "item": "pixelmon_create_compat:aluminium_nugget",
       "chance": 0.125
     }
   ]

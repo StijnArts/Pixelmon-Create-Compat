@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "pixelmon:red_apricorn"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:red_dye",
+      "count": 2
+    },
+    {
+      "item": "minecraft:brown_dye",
+      "chance": 0.05
+    }
+  ],
+  "processingTime": 50
+}

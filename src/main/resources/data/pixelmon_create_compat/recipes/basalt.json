@@ -10,7 +10,7 @@
       "item": "minecraft:cobblestone"
     },
     {
-      "item": "pixelmon_create_compat:pixelmon_compat_silver_nugget",
+      "item": "pixelmon_create_compat:silver_nugget",
       "chance": 0.125
     }
   ],

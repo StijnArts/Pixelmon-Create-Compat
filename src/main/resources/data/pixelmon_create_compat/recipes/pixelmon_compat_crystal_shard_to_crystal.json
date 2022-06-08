@@ -1,37 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "000",
+    "000",
+    "000"
   ],
   "key": {
     "0": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
-    },
-    "1": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
-    },
-    "2": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
-    },
-    "3": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
-    },
-    "4": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
-    },
-    "5": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
-    },
-    "6": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
-    },
-    "7": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
-    },
-    "8": {
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard"
+      "item": "pixelmon_create_compat:crystal_shard"
     }
   },
   "result": {

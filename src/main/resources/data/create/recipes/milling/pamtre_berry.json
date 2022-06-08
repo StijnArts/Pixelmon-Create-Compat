@@ -1,0 +1,23 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "pixelmon:pamtre_berry"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:purple_dye",
+      "count": 2
+    },
+    {
+      "item": "minecraft:brown_dye",
+      "chance": 0.1
+    },
+    {
+      "item": "minecraft:lime_dye",
+      "chance": 0.1
+    }
+  ],
+  "processingTime": 50
+}

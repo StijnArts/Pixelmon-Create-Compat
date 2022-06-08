@@ -16,7 +16,7 @@
       "chance": 0.05
     },
 	{
-      "item": "pixelmon_create_compat:pixelmon_compat_crystal_shard",
+      "item": "pixelmon_create_compat:crystal_shard",
       "chance": 0.125
     }
   ]

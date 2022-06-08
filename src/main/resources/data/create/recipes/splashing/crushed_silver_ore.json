@@ -7,14 +7,13 @@
   ],
   "results": [
     {
-      "item": "pixelmon_create_compat:pixelmon_compat_silver_nugget",
+      "tag": "forge:nuggets/silver",
       "count": 10
     },
     {
-      "item": "pixelmon_create_compat:pixelmon_compat_silver_nugget",
+      "tag": "forge:nuggets/silver",
       "count": 5,
       "chance": 0.5
     }
   ]
 }
-

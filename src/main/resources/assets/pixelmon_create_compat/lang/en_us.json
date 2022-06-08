@@ -1,6 +1,6 @@
 {
-  "item.pixelmon_create_compat.pixelmon_compat_platinum_nugget": "Platinum Nugget",
-  "item.pixelmon_create_compat.pixelmon_compat_silver_nugget": "Silver Nugget",
-  "item.pixelmon_create_compat.pixelmon_compat_aluminium_nugget": "Aluminium Nugget",
-  "item.pixelmon_create_compat.pixelmon_compat_crystal_shard": "Crystal Shard"
+  "item.pixelmon_create_compat.platinum_nugget": "Platinum Nugget",
+  "item.pixelmon_create_compat.silver_nugget": "Silver Nugget",
+  "item.pixelmon_create_compat.aluminium_nugget": "Aluminium Nugget",
+  "item.pixelmon_create_compat.crystal_shard": "Crystal Shard"
 }

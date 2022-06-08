@@ -17,6 +17,8 @@
  */
 package net.Drai.pixelmoncreatecompat;
 
+import net.Drai.pixelmoncreatecompat.item.ModItems;
+import net.minecraftforge.eventbus.api.IEventBus;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -39,66 +41,16 @@ import net.minecraft.block.Block;
 
 import java.util.function.Supplier;
 
-@Mod("pixelmon_create_compat")
+@Mod(PixelmonCreateCompatMod.MOD_ID)
 public class PixelmonCreateCompatMod {
 	public static final Logger LOGGER = LogManager.getLogger(PixelmonCreateCompatMod.class);
-	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(
-			new ResourceLocation("pixelmon_create_compat", "pixelmon_create_compat"), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals,
-			PROTOCOL_VERSION::equals);
-	public PixelmonCreateCompatModElements elements;
 
+	public static final String MOD_ID = "pixelmon_create_compat";
 	public PixelmonCreateCompatMod() {
-		elements = new PixelmonCreateCompatModElements();
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientLoad);
-		MinecraftForge.EVENT_BUS.register(new PixelmonCreateCompatModFMLBusEvents(this));
+		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		ModItems.register(eventBus);
+
 	}
 
-	private void init(FMLCommonSetupEvent event) {
-		elements.getElements().forEach(element -> element.init(event));
-	}
-
-	public void clientLoad(FMLClientSetupEvent event) {
-		elements.getElements().forEach(element -> element.clientLoad(event));
-	}
-
-	@SubscribeEvent
-	public void registerBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(elements.getBlocks().stream().map(Supplier::get).toArray(Block[]::new));
-	}
-
-	@SubscribeEvent
-	public void registerItems(RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(elements.getItems().stream().map(Supplier::get).toArray(Item[]::new));
-	}
-
-	@SubscribeEvent
-	public void registerEntities(RegistryEvent.Register<EntityType<?>> event) {
-		event.getRegistry().registerAll(elements.getEntities().stream().map(Supplier::get).toArray(EntityType[]::new));
-	}
-
-	@SubscribeEvent
-	public void registerEnchantments(RegistryEvent.Register<Enchantment> event) {
-		event.getRegistry().registerAll(elements.getEnchantments().stream().map(Supplier::get).toArray(Enchantment[]::new));
-	}
-
-	@SubscribeEvent
-	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
-		elements.registerSounds(event);
-	}
-
-	private static class PixelmonCreateCompatModFMLBusEvents {
-		private final PixelmonCreateCompatMod parent;
-
-		PixelmonCreateCompatModFMLBusEvents(PixelmonCreateCompatMod parent) {
-			this.parent = parent;
-		}
-
-		@SubscribeEvent
-		public void serverLoad(FMLServerStartingEvent event) {
-			this.parent.elements.getElements().forEach(element -> element.serverLoad(event));
-		}
-	}
 }

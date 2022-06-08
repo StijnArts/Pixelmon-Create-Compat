@@ -7,11 +7,11 @@
   ],
   "results": [
     {
-      "item": "pixelmon_create_compat:pixelmon_compat_aluminium_nugget",
+      "tag": "forge:nuggets/aluminum",
       "count": 10
     },
     {
-      "item": "pixelmon_create_compat:pixelmon_compat_aluminium_nugget",
+      "tag": "forge:nuggets/aluminum",
       "count": 5,
       "chance": 0.5
     }

@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "pixelmon:enigma_berry"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:white_dye",
+      "count": 2
+    },
+    {
+      "item": "minecraft:black_dye",
+      "chance": 0.1
+    }
+  ],
+  "processingTime": 50
+}
