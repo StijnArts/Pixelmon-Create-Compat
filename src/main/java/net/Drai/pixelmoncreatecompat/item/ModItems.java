@@ -18,7 +18,7 @@ public class ModItems {
     public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
             () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MISC)));
 
-    public static final RegistryObject<Item> ALUMINIUM_NUGGET = ITEMS.register("aluminium_nugget",
+    public static final RegistryObject<Item> aluminum_NUGGET = ITEMS.register("aluminum_nugget",
             () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MISC)));
 
     public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard",

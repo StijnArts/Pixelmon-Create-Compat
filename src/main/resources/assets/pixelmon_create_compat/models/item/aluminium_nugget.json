@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pixelmon_create_compat:items/aluminium_nugget"
+    "layer0": "pixelmon_create_compat:items/aluminum_nugget"
   }
 }
