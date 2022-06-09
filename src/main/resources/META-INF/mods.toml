@@ -9,21 +9,7 @@ displayName="Pixelmon Create Compat"
 credits=""
 displayURL=""
 authors="Drai, Kadinu"
-
-
-[[dependencies.pixelmon_create_compat]]
-    modId="pixelmon"
-    mandatory=true
-    versionRange="[9.0.1,)"
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies.pixelmon_create_compat]]
-    modId="create"
-    mandatory=true
-    versionRange="[mc1.16.5_v0.3.2,)"
-    ordering="BEFORE"
-    side="BOTH"
+description=""
 
 [[dependencies.pixelmon_create_compat]]
     modId="minecraft"
@@ -31,5 +17,21 @@ authors="Drai, Kadinu"
     versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.pixelmon_create_compat]]
+    modId="pixelmon"
+    mandatory=true
+    versionRange="[9.0.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.pixelmon_create_compat]]
+    modId="create"
+    mandatory=false
+    versionRange="[mc1.16.5_v0.3.2g,)"
+    ordering="AFTER"
+    side="BOTH"
+
+
 
 

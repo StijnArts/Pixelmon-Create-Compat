@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "pixelmon:bauxite_ore",
-    "pixelmon:crystal_ore",
-    "pixelmon:platinum_ore",
-    "pixelmon:silver_ore"
+    "forge:ores/bauxite",
+    "forge:ores/crystal",
+    "forge:ores/silver",
+    "forge:ores/platinum"
   ]
 }

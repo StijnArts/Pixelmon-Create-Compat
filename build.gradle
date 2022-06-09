@@ -75,7 +75,6 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
-    compileOnly fileTree(dir:'lib', include: ['*.jar'])
     implementation fg.deobf("curse.maven:flywheel-486392:3535459")
 
     implementation fg.deobf("curse.maven:create-328085:3536025")
